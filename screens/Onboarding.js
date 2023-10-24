@@ -154,7 +154,7 @@ export default class Onboarding extends Component {
                     }}
                     placeholder="Email"
                     keyboardType="email-address"
-                    tabIndex={1}
+                    tabIndex={0}
                     onSubmitEditing={() => {
                       passwordInput.focus();
                     }}
@@ -180,7 +180,7 @@ export default class Onboarding extends Component {
                     }}
                     placeholder="Password"
                     secureTextEntry={true}
-                    tabIndex={2}
+                    tabIndex={1}
                     onSubmitEditing={() => {
                       loginButton.focus();
                     }}
@@ -200,7 +200,7 @@ export default class Onboarding extends Component {
                       marginBottom: 20,
                     }}
                     onPress={() => navigation.navigate("App")}
-                    tabIndex={3}
+                    tabIndex={2}
                   >
                     <Text
                       style={{
