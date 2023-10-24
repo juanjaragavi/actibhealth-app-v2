@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "rn-material-kit-free",
+    "name": "actibhealth-app-v2",
     "description": "React Native - Material Kit Free",
-    "slug": "rn-material-kit-free",
+    "slug": "actibhealth-app-v2",
     "privacy": "unlisted",
     "platforms": [
       "ios",

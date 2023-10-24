@@ -77,8 +77,9 @@ const styles = StyleSheet.create({
   },
   header: {
     backgroundColor: "#159BC9",
+    paddingVertical: 5,
+    marginTop: 35,
     paddingHorizontal: 38,
-    paddingVertical: 10,
     justifyContent: "center",
   },
   logo: {
