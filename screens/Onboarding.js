@@ -56,7 +56,6 @@ export default class Onboarding extends Component {
             >
               Already subscribed?{" "}
               <Text
-                // onPress={() => navigation.navigate("LogIn")}
                 onPress={() => this.changeSlide(3)}
                 style={{ textDecorationLine: "underline" }}
               >
@@ -127,7 +126,7 @@ export default class Onboarding extends Component {
                   flex: 1,
                   flexDirection: "column",
                   alignItems: "flex-start",
-                  paddingTop: '4%',
+                  paddingTop: "4%",
                 }}
               >
                 <Text
@@ -137,7 +136,6 @@ export default class Onboarding extends Component {
                 </Text>
 
                 <View>
-
                   {/* Starts Form */}
                   <TextInput
                     style={{
@@ -217,12 +215,15 @@ export default class Onboarding extends Component {
                   </TouchableOpacity>
                 </View>
                 <TouchableOpacity>
-                  <Text onPress={() => navigation.navigate("ForgotPassword")} style={{ color: "#159BC9", marginTop: -10, }}>
+                  <Text
+                    onPress={() => navigation.navigate("ForgotPassword")}
+                    style={{ color: "#159BC9", marginTop: -10 }}
+                    tabIndex={3}
+                  >
                     Forgot Password?
                   </Text>
                 </TouchableOpacity>
                 {/* Ends Form */}
-
               </View>
             </Block>
           </Block>

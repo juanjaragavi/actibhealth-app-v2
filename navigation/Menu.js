@@ -31,6 +31,7 @@ function CustomDrawerContent({
     "Contact Us",
     "Technical Support",
     "Logout",
+    "Forgot Password",
   ];
 
   return (

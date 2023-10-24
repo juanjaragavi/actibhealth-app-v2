@@ -3,14 +3,12 @@ import { theme } from "galio-framework";
 import CustomDrawerContent from "./Menu";
 import { Dimensions } from "react-native";
 import { Header, Icon } from "../components";
-import { TouchableOpacity } from "react-native";
-import Ionicons from "@expo/vector-icons/Ionicons";
 import { materialTheme } from "../constants/";
+import { TouchableOpacity } from "react-native";
 
 import HomeScreen from "../screens/Home";
 import AbbyScreen from "../screens/Abby";
 import RestScreen from "../screens/Rest";
-import LogInScreen from "../screens/LogIn";
 import LogoutScreen from "../screens/Logout";
 import ProfileScreen from "../screens/Profile";
 import SettingsScreen from "../screens/Settings";
@@ -308,6 +306,21 @@ function AppStack() {
       <Drawer.Screen
         name="Components"
         component={ComponentsStack}
+        options={{
+          drawerIcon: ({ focused }) => (
+            <Icon
+              size={16}
+              name="toggle"
+              family="ionicon"
+              color={focused ? "white" : materialTheme.COLORS.MUTED}
+              style={{ marginRight: 2, marginLeft: 2 }}
+            />
+          ),
+        }}
+      />
+      <Drawer.Screen
+        name="Forgot Password"
+        component={ForgotPasswordStack}
         options={{
           drawerIcon: ({ focused }) => (
             <Icon

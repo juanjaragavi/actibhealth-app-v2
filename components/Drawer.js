@@ -59,8 +59,8 @@ class DrawerItem extends React.Component {
         return (
           <Icon
             size={16}
-            name="user"
-            family="entypo"
+            name="female"
+            family="font-awesome"
             color={focused ? "white" : materialTheme.COLORS.PRIMARY}
           />
         );
@@ -150,6 +150,15 @@ class DrawerItem extends React.Component {
           <Icon
             size={16}
             name="log-out"
+            family="entypo"
+            color={focused ? "white" : materialTheme.COLORS.PRIMARY}
+          />
+        );
+      case "Forgot Password":
+        return (
+          <Icon
+            size={16}
+            name="key"
             family="entypo"
             color={focused ? "white" : materialTheme.COLORS.PRIMARY}
           />
