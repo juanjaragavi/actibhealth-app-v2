@@ -1,4 +1,4 @@
-## [1.10.0] 2023 - 08 - 14
+## [2.00.1] 2023 - 08 - 14
 - dependencies updated
 - expo version updated
 - react native version updated

@@ -1,7 +1,7 @@
 {
   "name": "actibhealth-app-v2",
-  "version": "1.10.0",
-  "description": "Material Kit React Native. Coded by Creative Tim",
+  "version": "2.00.1",
+  "description": "ActibHealth App 2.00.1. This is the second Version of the ActibHealth Official Application.",
   "main": "node_modules/expo/AppEntry.js",
   "private": true,
   "scripts": {
@@ -43,7 +43,7 @@
     "jest-expo": "^45.0.1"
   },
   "bugs": {
-    "url": "https://github.com/creativetimofficial/material-kit-react-native/issues"
+    "url": "https://app.actibhealth.com/main/contact-us/"
   },
-  "homepage": "https://demos.creative-tim.com/material-kit-react-native/"
+  "homepage": "https://app.actibhealth.com/main/contact-us/"
 }
