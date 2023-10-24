@@ -38,9 +38,7 @@ function AppStack() {
   return (
     <Drawer.Navigator
       style={{ flex: 1 }}
-      drawerContent={(props) => (
-        <CustomDrawerContent {...props} />
-      )}
+      drawerContent={(props) => <CustomDrawerContent {...props} />}
       drawerStyle={{
         backgroundColor: materialTheme.COLORS.PRIMARY,
         width: width * 1,
@@ -343,7 +341,11 @@ function AbbyStack() {
       initialRouteName="Abby"
       screenOptions={{
         mode: "card",
-        headerShown: false,
+        headerShown: true,
+        headerStyle: {
+          backgroundColor: materialTheme.COLORS.PRIMARY,
+        },
+        headerTintColor: materialTheme.COLORS.WHITE,
       }}
     >
       <Stack.Screen
@@ -364,7 +366,11 @@ function ContactUsStack() {
       initialRouteName="ContactUs"
       screenOptions={{
         mode: "card",
-        headerShown: false,
+        headerShown: true,
+        headerStyle: {
+          backgroundColor: materialTheme.COLORS.PRIMARY,
+        },
+        headerTintColor: materialTheme.COLORS.WHITE,
       }}
     >
       <Stack.Screen
@@ -385,7 +391,11 @@ function DailyScheduleStack() {
       initialRouteName="DailySchedule"
       screenOptions={{
         mode: "card",
-        headerShown: false,
+        headerShown: true,
+        headerStyle: {
+          backgroundColor: materialTheme.COLORS.PRIMARY,
+        },
+        headerTintColor: materialTheme.COLORS.WHITE,
       }}
     >
       <Stack.Screen
@@ -407,6 +417,10 @@ function HydrationStack() {
       screenOptions={{
         mode: "card",
         headerShown: false,
+        headerStyle: {
+          backgroundColor: materialTheme.COLORS.PRIMARY,
+        },
+        headerTintColor: materialTheme.COLORS.WHITE,
       }}
     >
       <Stack.Screen
@@ -427,7 +441,11 @@ function ExerciseStack() {
       initialRouteName="Exercise"
       screenOptions={{
         mode: "card",
-        headerShown: false,
+        headerShown: true,
+        headerStyle: {
+          backgroundColor: materialTheme.COLORS.PRIMARY,
+        },
+        headerTintColor: materialTheme.COLORS.WHITE,
       }}
     >
       <Stack.Screen
@@ -448,7 +466,11 @@ function KnowledgeCenterStack() {
       initialRouteName="KnowledgeCenter"
       screenOptions={{
         mode: "card",
-        headerShown: false,
+        headerShown: true,
+        headerStyle: {
+          backgroundColor: materialTheme.COLORS.PRIMARY,
+        },
+        headerTintColor: materialTheme.COLORS.WHITE,
       }}
     >
       <Stack.Screen
@@ -469,7 +491,11 @@ function LogoutStack() {
       initialRouteName="Logout"
       screenOptions={{
         mode: "card",
-        headerShown: false,
+        headerShown: true,
+        headerStyle: {
+          backgroundColor: materialTheme.COLORS.PRIMARY,
+        },
+        headerTintColor: materialTheme.COLORS.WHITE,
       }}
     >
       <Stack.Screen
@@ -490,7 +516,11 @@ function MyBehaviorStack() {
       initialRouteName="MyBehavior"
       screenOptions={{
         mode: "card",
-        headerShown: false,
+        headerShown: true,
+        headerStyle: {
+          backgroundColor: materialTheme.COLORS.PRIMARY,
+        },
+        headerTintColor: materialTheme.COLORS.WHITE,
       }}
     >
       <Stack.Screen
@@ -511,7 +541,11 @@ function MyJourneyStack() {
       initialRouteName="MyJourney"
       screenOptions={{
         mode: "card",
-        headerShown: false,
+        headerShown: true,
+        headerStyle: {
+          backgroundColor: materialTheme.COLORS.PRIMARY,
+        },
+        headerTintColor: materialTheme.COLORS.WHITE,
       }}
     >
       <Stack.Screen
@@ -532,7 +566,11 @@ function NutrientsStack() {
       initialRouteName="Nutrients"
       screenOptions={{
         mode: "card",
-        headerShown: false,
+        headerShown: true,
+        headerStyle: {
+          backgroundColor: materialTheme.COLORS.PRIMARY,
+        },
+        headerTintColor: materialTheme.COLORS.WHITE,
       }}
     >
       <Stack.Screen
@@ -553,7 +591,11 @@ function RestStack() {
       initialRouteName="Rest"
       screenOptions={{
         mode: "card",
-        headerShown: false,
+        headerShown: true,
+        headerStyle: {
+          backgroundColor: materialTheme.COLORS.PRIMARY,
+        },
+        headerTintColor: materialTheme.COLORS.WHITE,
       }}
     >
       <Stack.Screen
@@ -574,7 +616,11 @@ function TechnicalSupportStack() {
       initialRouteName="TechnicalSupport"
       screenOptions={{
         mode: "card",
-        headerShown: false,
+        headerShown: true,
+        headerStyle: {
+          backgroundColor: materialTheme.COLORS.PRIMARY,
+        },
+        headerTintColor: materialTheme.COLORS.WHITE,
       }}
     >
       <Stack.Screen
@@ -595,7 +641,11 @@ function ThoughtsStack() {
       initialRouteName="Thoughts"
       screenOptions={{
         mode: "card",
-        headerShown: false,
+        headerShown: true,
+        headerStyle: {
+          backgroundColor: materialTheme.COLORS.PRIMARY,
+        },
+        headerTintColor: materialTheme.COLORS.WHITE,
       }}
     >
       <Stack.Screen
@@ -616,7 +666,11 @@ function HomeStack() {
       initialRouteName="Home"
       screenOptions={{
         mode: "card",
-        headerShown: false,
+        headerShown: true,
+        headerStyle: {
+          backgroundColor: materialTheme.COLORS.PRIMARY,
+        },
+        headerTintColor: materialTheme.COLORS.WHITE,
       }}
     >
       <Stack.Screen
@@ -680,6 +734,10 @@ function ForgotPasswordStack() {
       screenOptions={{
         mode: "card",
         headerShown: true,
+        headerStyle: {
+          backgroundColor: materialTheme.COLORS.PRIMARY,
+        },
+        headerTintColor: materialTheme.COLORS.WHITE,
       }}
     >
       <Stack.Screen
@@ -694,7 +752,7 @@ function ForgotPasswordStack() {
                 name="chevron-left"
                 family="feather"
                 size={theme.SIZES.BASE + 6}
-                color="#159BC9"
+                color={materialTheme.COLORS.WHITE}
               />
             </TouchableOpacity>
           ),
@@ -710,6 +768,10 @@ function ComponentsStack() {
       screenOptions={{
         mode: "card",
         headerShown: false,
+        headerStyle: {
+          backgroundColor: materialTheme.COLORS.PRIMARY,
+        },
+        headerTintColor: materialTheme.COLORS.WHITE,
       }}
     >
       <Stack.Screen
@@ -730,6 +792,10 @@ export default function OnboardingStack(props) {
       screenOptions={{
         mode: "card",
         headerShown: false,
+        headerStyle: {
+          backgroundColor: materialTheme.COLORS.PRIMARY,
+        },
+        headerTintColor: materialTheme.COLORS.WHITE
       }}
     >
       <Stack.Screen
