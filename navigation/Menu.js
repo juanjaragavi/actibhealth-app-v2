@@ -1,10 +1,10 @@
 import React from "react";
-import { TouchableOpacity, ScrollView, StyleSheet, Image } from "react-native";
 import { Block } from "galio-framework";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { TouchableOpacity, ScrollView, StyleSheet, Image } from "react-native";
 
-import { Drawer as DrawerCustomItem } from "../components/";
 import { Images } from "../constants/";
+import { Drawer as DrawerCustomItem } from "../components/";
 
 function CustomDrawerContent({
   drawerPosition,
