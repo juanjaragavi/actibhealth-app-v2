@@ -16,7 +16,7 @@ export default {
     SWITCH_ON: '#159BC9',
     SWITCH_OFF: '#D4D9DD',
     GRADIENT_START: '#159BC9',
-    GRADIENT_END: '#AC2688',
+    GRADIENT_END: '#159CC1',
     PRICE_COLOR: '#EAD5FB',
     BORDER_COLOR: '#E7E7E7',
     BLOCK: '#E7E7E7',
