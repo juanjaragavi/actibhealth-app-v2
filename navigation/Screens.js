@@ -64,7 +64,7 @@ function AppStack() {
           fontWeight: "normal",
         },
       }}
-      initialRouteName="Home"
+      initialRouteName="Onboarding"
     >
       <Drawer.Screen
         name="Home"
@@ -691,28 +691,6 @@ function ForgotPasswordStack() {
   );
 }
 
-function LogInStack() {
-  return (
-    <Stack.Navigator
-      initialRouteName="LogIn"
-      screenOptions={{
-        mode: "card",
-        headerShown: "screen",
-      }}
-    >
-      <Stack.Screen
-        name="LogIn"
-        component={LogInScreen}
-        options={{
-          header: ({ navigation, scene }) => (
-            <Header title="Log in" scene={scene} navigation={navigation} />
-          ),
-        }}
-      />
-    </Stack.Navigator>
-  );
-}
-
 function ComponentsStack() {
   return (
     <Stack.Navigator
@@ -733,16 +711,14 @@ function ComponentsStack() {
   );
 }
 
-export default function OnboardingStack() {
+export default function OnboardingStack(props) {
   return (
     <Stack.Navigator
-    screenOptions={{
-      headerShown: false,
-      headerTransparent: true,
-      headerTitle: false,
-    }}
+      screenOptions={{
+        mode: "card",
+        headerShown: false,
+      }}
     >
-      <Stack.Screen name="App" component={AppStack} />
       <Stack.Screen
         name="Onboarding"
         component={OnboardingScreen}
@@ -750,125 +726,7 @@ export default function OnboardingStack() {
           headerTransparent: true,
         }}
       />
-      <Stack.Screen
-        name="Rest"
-        component={RestScreen}
-        option={{
-          headerTransparent: true,
-        }}
-      />
-      <Stack.Screen
-        name="Abby"
-        component={AbbyScreen}
-        option={{
-          headerTransparent: true,
-        }}
-      />
-      <Stack.Screen
-        name="LogIn"
-        component={LogInScreen}
-        option={{
-          headerTransparent: true,
-        }}
-      />
-      <Stack.Screen
-        name="Logout"
-        component={LogoutScreen}
-        option={{
-          headerTransparent: true,
-        }}
-      />
-      <Stack.Screen
-        name="Profile"
-        component={ProfileScreen}
-        option={{
-          headerTransparent: true,
-        }}
-      />
-      <Stack.Screen
-        name="Exercise"
-        component={ExerciseScreen}
-        option={{
-          headerTransparent: true,
-        }}
-      />
-      <Stack.Screen
-        name="Settings"
-        component={SettingsScreen}
-        option={{
-          headerTransparent: true,
-        }}
-      />
-      <Stack.Screen
-        name="Thoughts"
-        component={ThoughtsScreen}
-        option={{
-          headerTransparent: true,
-        }}
-      />
-      <Stack.Screen
-        name="Nutrients"
-        component={NutrientsScreen}
-        option={{
-          headerTransparent: true,
-        }}
-      />
-      <Stack.Screen
-        name="Hydration"
-        component={HydrationScreen}
-        option={{
-          headerTransparent: true,
-        }}
-      />
-      <Stack.Screen
-        name="ContactUs"
-        component={ContactUsScreen}
-        option={{
-          headerTransparent: true,
-        }}
-      />
-      <Stack.Screen
-        name="MyJourney"
-        component={MyJourneyScreen}
-        option={{
-          headerTransparent: true,
-        }}
-      />
-      <Stack.Screen
-        name="MyBehavior"
-        component={MyBehaviorScreen}
-        option={{
-          headerTransparent: true,
-        }}
-      />
-      <Stack.Screen
-        name="DailySchedule"
-        component={DailyScheduleScreen}
-        option={{
-          headerTransparent: true,
-        }}
-      />
-      <Stack.Screen
-        name="ForgotPassword"
-        component={ForgotPasswordScreen}
-        option={{
-          headerTransparent: true,
-        }}
-      />
-      <Stack.Screen
-        name="KnowledgeCenter"
-        component={KnowledgeCenterScreen}
-        option={{
-          headerTransparent: true,
-        }}
-      />
-      <Stack.Screen
-        name="TechnicalSupport"
-        component={TechnicalSupportScreen}
-        option={{
-          headerTransparent: true,
-        }}
-      />
+      <Stack.Screen name="App" component={AppStack} />
     </Stack.Navigator>
   );
 }
