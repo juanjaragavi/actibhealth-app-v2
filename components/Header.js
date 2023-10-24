@@ -190,18 +190,16 @@ export default withNavigation(Header);
 
 const styles = StyleSheet.create({
   button: {
-    padding: 12,
+    padding: 6,
     position: 'relative',
   },
   title: {
     width: '100%',
     fontSize: 16,
-    fontWeight: 'bold',
+    fontWeight: 'light',
   },
   navbar: {
-    paddingVertical: 0,
-    paddingBottom: theme.SIZES.BASE * 1.5,
-    paddingTop: iPhoneX ? theme.SIZES.BASE * 4 : theme.SIZES.BASE,
+    padding: 0,
     zIndex: 5,
   },
   shadow: {
@@ -222,7 +220,7 @@ const styles = StyleSheet.create({
     right: 8,
   },
   header: {
-    backgroundColor: theme.COLORS.WHITE,
+    backgroundColor: theme.COLORS.PRIMARY,
   },
   divider: {
     borderRightWidth: 0.3,

@@ -54,7 +54,7 @@ function AppStack() {
         inactiveBackgroundColor: "transparent",
         itemStyle: {
           width: width * 0.74,
-          paddingHorizontal: 10,
+          paddingHorizontal: 16,
           justifyContent: "center",
           alignContent: "center",
           overflow: "hidden",
