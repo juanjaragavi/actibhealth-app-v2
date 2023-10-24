@@ -693,8 +693,8 @@ function ForgotPasswordStack() {
                 style={{ marginLeft: 15 }}
                 name="chevron-left"
                 family="feather"
-                size={theme.SIZES.BASE + 5}
-                color={theme.COLORS.BLACK}
+                size={theme.SIZES.BASE + 6}
+                color="#159BC9"
               />
             </TouchableOpacity>
           ),

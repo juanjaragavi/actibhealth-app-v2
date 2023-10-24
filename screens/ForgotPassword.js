@@ -7,7 +7,7 @@ import {
     TouchableOpacity,
 } from "react-native";
 
-export default function ForgotPassword() {
+export default function ForgotPassword({ resetPasswordButton }) {
     const [email, setEmail] = useState("");
 
     const handleResetPassword = () => {
@@ -42,8 +42,13 @@ export default function ForgotPassword() {
             autoCapitalize="none"
             autoCompleteType="email"
             autoCorrect={false}
+            tabIndex={0}
+            blurOnSubmit={false}
         />
         <TouchableOpacity
+            ref={(button) => {
+            resetPasswordButton = button;
+            }}
             style={{
             backgroundColor: "#159BC9",
             borderRadius: 20,
@@ -52,6 +57,8 @@ export default function ForgotPassword() {
             marginBottom: 20,
             }}
             onPress={handleResetPassword}
+            tabIndex={1}
+            blurOnSubmit={false}
         >
             <Text style={styles.buttonText}>Reset Password</Text>
         </TouchableOpacity>
