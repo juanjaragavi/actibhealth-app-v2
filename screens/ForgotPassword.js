@@ -57,7 +57,6 @@ export default function ForgotPassword({ resetPasswordButton }) {
             marginBottom: 20,
             }}
             onPress={handleResetPassword}
-            tabIndex={1}
             blurOnSubmit={false}
         >
             <Text style={styles.buttonText}>Reset Password</Text>

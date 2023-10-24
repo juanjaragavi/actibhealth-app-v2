@@ -218,7 +218,6 @@ export default class Onboarding extends Component {
                   ref={(button) => {
                     forgotPasswordButton = button;
                   }}
-                  tabIndex={3}
                 >
                   <Text
                     onPress={() => navigation.navigate("ForgotPassword")}
