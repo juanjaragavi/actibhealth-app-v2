@@ -343,7 +343,7 @@ function AbbyStack() {
       initialRouteName="Abby"
       screenOptions={{
         mode: "card",
-        headerShown: "screen",
+        headerShown: false,
       }}
     >
       <Stack.Screen
@@ -364,7 +364,7 @@ function ContactUsStack() {
       initialRouteName="ContactUs"
       screenOptions={{
         mode: "card",
-        headerShown: "screen",
+        headerShown: false,
       }}
     >
       <Stack.Screen
@@ -385,7 +385,7 @@ function DailyScheduleStack() {
       initialRouteName="DailySchedule"
       screenOptions={{
         mode: "card",
-        headerShown: "screen",
+        headerShown: false,
       }}
     >
       <Stack.Screen
@@ -406,7 +406,7 @@ function HydrationStack() {
       initialRouteName="Hydration"
       screenOptions={{
         mode: "card",
-        headerShown: "screen",
+        headerShown: false,
       }}
     >
       <Stack.Screen
@@ -427,7 +427,7 @@ function ExerciseStack() {
       initialRouteName="Exercise"
       screenOptions={{
         mode: "card",
-        headerShown: "screen",
+        headerShown: false,
       }}
     >
       <Stack.Screen
@@ -448,7 +448,7 @@ function KnowledgeCenterStack() {
       initialRouteName="KnowledgeCenter"
       screenOptions={{
         mode: "card",
-        headerShown: "screen",
+        headerShown: false,
       }}
     >
       <Stack.Screen
@@ -469,7 +469,7 @@ function LogoutStack() {
       initialRouteName="Logout"
       screenOptions={{
         mode: "card",
-        headerShown: "screen",
+        headerShown: false,
       }}
     >
       <Stack.Screen
@@ -490,7 +490,7 @@ function MyBehaviorStack() {
       initialRouteName="MyBehavior"
       screenOptions={{
         mode: "card",
-        headerShown: "screen",
+        headerShown: false,
       }}
     >
       <Stack.Screen
@@ -511,7 +511,7 @@ function MyJourneyStack() {
       initialRouteName="MyJourney"
       screenOptions={{
         mode: "card",
-        headerShown: "screen",
+        headerShown: false,
       }}
     >
       <Stack.Screen
@@ -532,7 +532,7 @@ function NutrientsStack() {
       initialRouteName="Nutrients"
       screenOptions={{
         mode: "card",
-        headerShown: "screen",
+        headerShown: false,
       }}
     >
       <Stack.Screen
@@ -553,7 +553,7 @@ function RestStack() {
       initialRouteName="Rest"
       screenOptions={{
         mode: "card",
-        headerShown: "screen",
+        headerShown: false,
       }}
     >
       <Stack.Screen
@@ -574,7 +574,7 @@ function TechnicalSupportStack() {
       initialRouteName="TechnicalSupport"
       screenOptions={{
         mode: "card",
-        headerShown: "screen",
+        headerShown: false,
       }}
     >
       <Stack.Screen
@@ -595,7 +595,7 @@ function ThoughtsStack() {
       initialRouteName="Thoughts"
       screenOptions={{
         mode: "card",
-        headerShown: "screen",
+        headerShown: false,
       }}
     >
       <Stack.Screen
@@ -616,7 +616,7 @@ function HomeStack() {
       initialRouteName="Home"
       screenOptions={{
         mode: "card",
-        headerShown: "screen",
+        headerShown: false,
       }}
     >
       <Stack.Screen
@@ -637,7 +637,7 @@ function ProfileStack() {
       initialRouteName="Profile"
       screenOptions={{
         mode: "card",
-        headerShown: "screen",
+        headerShown: false,
       }}
     >
       <Stack.Screen
@@ -658,7 +658,7 @@ function SettingsStack() {
       initialRouteName="Settings"
       screenOptions={{
         mode: "card",
-        headerShown: "screen",
+        headerShown: false,
       }}
     >
       <Stack.Screen
@@ -679,7 +679,7 @@ function ForgotPasswordStack() {
       initialRouteName="ForgotPassword"
       screenOptions={{
         mode: "card",
-        headerShown: "screen",
+        headerShown: true,
       }}
     >
       <Stack.Screen
@@ -709,7 +709,7 @@ function ComponentsStack() {
     <Stack.Navigator
       screenOptions={{
         mode: "card",
-        headerShown: "screen",
+        headerShown: false,
       }}
     >
       <Stack.Screen
@@ -739,6 +739,7 @@ export default function OnboardingStack(props) {
           headerTransparent: true,
         }}
       />
+      <Stack.Screen name="ForgotPassword" component={ForgotPasswordStack} />
       <Stack.Screen name="App" component={AppStack} />
     </Stack.Navigator>
   );

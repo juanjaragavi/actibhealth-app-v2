@@ -214,11 +214,15 @@ export default class Onboarding extends Component {
                     </Text>
                   </TouchableOpacity>
                 </View>
-                <TouchableOpacity>
+                <TouchableOpacity
+                  ref={(button) => {
+                    forgotPasswordButton = button;
+                  }}
+                  tabIndex={3}
+                >
                   <Text
                     onPress={() => navigation.navigate("ForgotPassword")}
                     style={{ color: "#159BC9", marginTop: -10 }}
-                    tabIndex={3}
                   >
                     Forgot Password?
                   </Text>
