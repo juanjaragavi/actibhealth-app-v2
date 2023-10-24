@@ -26,6 +26,7 @@
     "expo-linear-gradient": "~12.1.2",
     "expo-splash-screen": "^0.18.2",
     "galio-framework": "^0.8.0",
+    "newman": "^6.0.0",
     "react": "18.2.0",
     "react-native": "0.71.8",
     "react-native-gesture-handler": "~2.9.0",
