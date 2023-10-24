@@ -5,16 +5,16 @@ import { WebView } from 'react-native-webview';
 
 const { width } = Dimensions.get('screen');
 
-export default class Home extends React.Component {
+export default class MyBehavior extends React.Component {
 
-  renderHome = () => {
+  renderMyBehavior = () => {
     return (
       <ScrollView
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.homeContainer}>
         <Block flex>
         <WebView
-          source={{ uri: 'https://app.actibhealth.com/main/home/' }}
+          source={{ uri: 'https://app.actibhealth.com/main/behavior/' }}
           style={{ flex: 1 }}
         />
       </Block>
@@ -25,7 +25,7 @@ export default class Home extends React.Component {
   render() {
     return (
       <Block flex center style={styles.home}>
-        {this.renderHome()}
+        {this.renderMyBehavior()}
       </Block>
     );
   }

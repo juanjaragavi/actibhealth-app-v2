@@ -1,11 +1,10 @@
 import React from "react";
-import { TouchableWithoutFeedback, ScrollView, StyleSheet, Image } from "react-native";
+import { TouchableOpacity, ScrollView, StyleSheet, Image } from "react-native";
 import { Block } from "galio-framework";
-import { useSafeArea } from "react-native-safe-area-context";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-import { Drawer as DrawerCustomItem } from '../components/';
+import { Drawer as DrawerCustomItem } from "../components/";
 import { Images } from "../constants/";
-
 
 function CustomDrawerContent({
   drawerPosition,
@@ -15,12 +14,23 @@ function CustomDrawerContent({
   state,
   ...rest
 }) {
-  const insets = useSafeArea();
+  const insets = useSafeAreaInsets();
   const screens = [
     "Home",
-    "Profile",
-    "Settings",
-    "Components"
+    "My Journey",
+    "My Behavior",
+    "Daily Schedule",
+    "Abby",
+    "Rest",
+    "Hydration",
+    "Exercise",
+    "Nutrients",
+    "Thoughts",
+    "Knowledge Center",
+    "My Profile",
+    "Contact Us",
+    "Technical Support",
+    "Logout",
   ];
 
   return (
@@ -28,23 +38,19 @@ function CustomDrawerContent({
       style={styles.container}
       forceInset={{ top: "always", horizontal: "never" }}
     >
-      <Block flex={0.25} style={styles.header}>
-        <TouchableWithoutFeedback
-          onPress={() => navigation.navigate("Home")}
-        >
-          <Block style={styles.profile}>
-            <Image source={{ uri: Images.LogoAB2 }} style={styles.avatar} />
-          </Block>
-        </TouchableWithoutFeedback>
+      <Block style={styles.header}>
+        <TouchableOpacity onPress={() => navigation.navigate("Home")}>
+          <Image source={{ uri: Images.LogoAB2 }} style={styles.logo} />
+        </TouchableOpacity>
       </Block>
-      <Block flex style={{ marginTop: 10, paddingLeft: 7, paddingRight: 14 }}>
+      <Block flex style={styles.drawerContainer}>
         <ScrollView
           contentContainerStyle={[
             {
-              paddingTop: insets.top * 0.4,
+              paddingTop: insets.top * 0.2,
               paddingLeft: drawerPosition === "left" ? insets.left : 0,
-              paddingRight: drawerPosition === "right" ? insets.right : 0
-            }
+              paddingRight: drawerPosition === "right" ? insets.right : 0,
+            },
           ]}
           showsVerticalScrollIndicator={false}
         >
@@ -60,31 +66,31 @@ function CustomDrawerContent({
           })}
         </ScrollView>
       </Block>
-
     </Block>
   );
 }
 
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: "#FFFFFF",
   },
   header: {
-    backgroundColor: '#159BC9',
-    paddingHorizontal: 28,
-    justifyContent: 'center',
+    backgroundColor: "#159BC9",
+    paddingHorizontal: 38,
+    paddingVertical: 10,
+    justifyContent: "center",
   },
-  profile: {
-    margin: 0,
+  logo: {
+    marginBottom: 0,
+    padding: 0,
+    height: 55,
+    width: 195,
   },
-  avatar: {
-    height: 65,
-    width: 230,
+  drawerContainer: {
+    marginTop: 5,
+    paddingHorizontal: 5,
   },
-  seller: {
-    marginRight: 16,
-  }
 });
 
 export default CustomDrawerContent;
