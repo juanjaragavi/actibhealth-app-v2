@@ -1,0 +1,2117 @@
+{
+	"info": {
+		"_postman_id": "0a2341b7-e9d0-4f3d-9c05-15ac92ead6e1",
+		"name": "ActibHealthV2-Juan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12595224",
+		"_collection_link": "https://winter-space-570450.postman.co/workspace/Team-Workspace~b9152323-3750-4bf0-8744-bdfdefe5f95b/collection/12595224-0a2341b7-e9d0-4f3d-9c05-15ac92ead6e1?action=share&source=collection_link&creator=12595224"
+	},
+	"item": [
+		{
+			"name": "Public Data",
+			"item": [
+				{
+					"name": "Country",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/dataV2/Countries",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"dataV2",
+								"Countries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TimeZones",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/dataV2/TimeZones",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"dataV2",
+								"TimeZones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SystemMeasurement",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/dataV2/SystemMeasurement",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"dataV2",
+								"SystemMeasurement"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Measures",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/dataV2/Measures",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"dataV2",
+								"Measures"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "IPDetails",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/dataV2/IPDetails",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"dataV2",
+								"IPDetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Memberships",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/dataV2/Memberships",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"dataV2",
+								"Memberships"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RemindersMethods",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/dataV2/RemindersMethods",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"dataV2",
+								"RemindersMethods"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AbbyTime",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/datav2/AbbyTimes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"datav2",
+								"AbbyTimes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Genders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/datav2/Genders",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"datav2",
+								"Genders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "API_Version",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/dataV2/API_Version",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"dataV2",
+								"API_Version"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weight",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/dataV2/Weight?SystemID=1&ListType=Short",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"dataV2",
+								"Weight"
+							],
+							"query": [
+								{
+									"key": "SystemID",
+									"value": "1",
+									"description": "1 Sistema Imperial // 2 Sistema Métrico"
+								},
+								{
+									"key": "ListType",
+									"value": "Short",
+									"description": "Short para lista corta // Full para lista completa"
+								}
+							]
+						},
+						"description": "Para obtener la lista de pesos a mostrar en los menú desplegables.\n\nComo son muchos los valores con el parámetro ListType se obtiene la Lista corta que es la por defecto o la Lista completa que se muestra solo a solicitud del usuario."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AbbyAgents",
+			"item": [
+				{
+					"name": "Get_List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/AbbyAgentsV2/GET_List",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"AbbyAgentsV2",
+								"GET_List"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAgentScript_ByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/AbbyAgentsV2/GetAgentScript_ByName?agentname=Rest",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"AbbyAgentsV2",
+								"GetAgentScript_ByName"
+							],
+							"query": [
+								{
+									"key": "agentname",
+									"value": "Rest"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAgentScript_UserList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/AbbyAgentsV2/GetAgentScript_UserList?token=JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"AbbyAgentsV2",
+								"GetAgentScript_UserList"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar"
+								},
+								{
+									"key": "token",
+									"value": "6mmQE9RicYh4ejf94+yIZf+3Tts3WrJfH+96HGtvvruBpGDPweOQqysbIQcQKstwnXLIvHc+3Oo75PAoXPdi/bEUkVskvfYKTh35C24Quck=",
+									"description": "prueba01@bitco.com.ar",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "6mmQE9RicYh4ejf94+yIZfh74a9H1EtyQzYfRnk32O0j8pSXjWA3vIKQIU1sv23fA/rcOQA9vvQ2OAPuesAOq8HqMTswlzUBwkZFOgsA+J4=",
+									"description": "Mario",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Referrrals",
+			"item": [
+				{
+					"name": "ADD",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n    \"Referral_Name\": \"Javier Bardi\", \r\n    \"Referral_Email\": \"j_bardi@hotmail.com\",\r\n    \"UseBuddiesCode\": true\r\n    },\r\n    {\"Referral_Name\": \"Andres Posicionarte\",\r\n    \"Referral_Email\": \"andres@posicionarte.com\",\r\n    \"UseBuddiesCode\":false\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/ReferralsV2/ADD?token=JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"ReferralsV2",
+								"ADD"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/ReferralsV2/GET?token=JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"ReferralsV2",
+								"GET"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "GetToken",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"will@greentechendeavors.com\", \"password\":\"pipicucu66\"}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/usersV2/gettoken?IsNativeApp=fa",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"usersV2",
+								"gettoken"
+							],
+							"query": [
+								{
+									"key": "IsNativeApp",
+									"value": "fa",
+									"description": "if the token is for nativeAPP the token expires in 5 years, otherwise it expires in 24 hours"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "IsTaken",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"email\": \"jbardi@bitco.com.ar\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/usersV2/isTaken",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"usersV2",
+								"isTaken"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET_Profile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/UsersV2/GET_Profile?token=JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"UsersV2",
+								"GET_Profile"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar"
+								},
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlslIMTtzHrXL2gIdeo0HYHOUlrpmI0IfgsqK3nA609JPRPzMGW22vMGxHORbsX1auV+OUOeyagy7xlGIv8L5hAL0=",
+									"description": "will@flashchargebatteries.com",
+									"disabled": true
+								},
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlsgmYszBgtoEwjvaKmMn202ufiiw7pZqrbWLmiy9J16z6UGJpyZb22t5YBym8fxraPM5mRWBA8cvDXBiTy8A4xRU=",
+									"description": "j_bardi1@hotmail.com",
+									"disabled": true
+								},
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlsu5XhfTnSwb46gG8A7qOVLWhsrhTMOk3aiaBIBj4h7TwpznP46z1e4BBZlN+f8/HWPBX1LV10FSllB3a3/8Gty8=",
+									"description": "jbardi2@hotmail.com",
+									"disabled": true
+								},
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlsrEu3xTsv4IfSkCxs0+/kVIuhUZjA5WFyU/H880hzR0L/8V4pFVUA/DgHJKcnbUcbSNUtS5VO2E/qvDw1obsZUk=",
+									"description": "102802@spatialgarage.com",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlsict/5m08l5S8BIJcbqBJHwPGKsN2aVEo95e4ftRx8Suyj9baIsQctZ8fpi+GpAzh3MyWMxB7ajMSVyKIlNELw0=",
+									"description": "andres_0o@hotmail.com",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "6mmQE9RicYh4ejf94+yIZV/4nabEjb808f5bOb+N+kvew9ov0DYIffo/pRT/V6QWIhDUqA7ZrRKjrBv4iI36qGNvh75XQxyzCh+gcXMGlFpn2MQwABc/MDYCByYXWL8r",
+									"description": "prueba22",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "6mmQE9RicYh4ejf94+yIZeTHAdHbSB+jS5LpY41B2TC6e4dgx50c3dxEfmSawBx3YcybtKBxe+Q2I7LKJ03z4AmVxHqUaGFcbuVDzyqYjl0=",
+									"description": "Miriam",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "6mmQE9RicYh4ejf94+yIZfh74a9H1EtyQzYfRnk32O0j8pSXjWA3vIKQIU1sv23fA/rcOQA9vvQ2OAPuesAOq8HqMTswlzUBwkZFOgsA+J4=",
+									"description": "mario",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "6mmQE9RicYh4ejf94+yIZX7eA8nUSbvRQxeJWHQcrX0hVCDfHjiYwWFScaURC5ifzP+ZKqwDxUkpgPdpC3sOF90/Ruo9y+ouTbsYewnD1Kc=",
+									"description": "Will",
+									"disabled": true
+								}
+							]
+						},
+						"description": "be careful, Is the user has a subscription, this will be replaced. Is necessary check if in the user's profile has a membership ID"
+					},
+					"response": []
+				},
+				{
+					"name": "SET_Profile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"AcceptTerms\": true,\r\n    \"UserID\": 1,\r\n    \"Nickname\": \"chaucha\",\r\n    \"Firstname\": \"Javier\",\r\n    \"Lastname\": \"Bardi\",\r\n    \"Cellphone_CountryCode\": \"+54\",\r\n    \"Cellphone_Number\": \"91158764975\",\r\n    \"CountryISO\": \"AR\",\r\n    \"ZIPCode\": \"111\",\r\n    \"SystemID\": 2,\r\n    \"Email\": \"j_bardi@hotmail.com\",\r\n    \"PlusHour\": -3,\r\n    \"CurrentHeight\": 1.46,\r\n    \"GoalWeight\": 82,\r\n    \"HourTalkToAbby\": 800,\r\n    \"GenderID\": 2,\r\n    \"StartWeight\": 98\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/UsersV2/SET_Profile?token=JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"UsersV2",
+								"SET_Profile"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064="
+								},
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlsga+jqFm3Yh+aR+KW9nrfLhHAnW145Hlz/sENHk62tvBbbNYC9GXYj5M7hb0kpNhqrbbaipGA3STzBdQcEFkxEs=",
+									"description": "will@spatialgarage.com",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlsict/5m08l5S8BIJcbqBJHwPGKsN2aVEo95e4ftRx8Suyj9baIsQctZ8fpi+GpAzh3MyWMxB7ajMSVyKIlNELw0=",
+									"description": "andres",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SET_Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Password\": \"A12345678\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/UsersV2/SET_Password?token=JQPCis5wC7KXO2yXsjwlsict/5m08l5S8BIJcbqBJHwPGKsN2aVEo95e4ftRx8Suyj9baIsQctZ8fpi+GpAzh3MyWMxB7ajMSVyKIlNELw0=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"UsersV2",
+								"SET_Password"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlsga+jqFm3Yh+aR+KW9nrfLhHAnW145Hlz/sENHk62tvBbbNYC9GXYj5M7hb0kpNhqrbbaipGA3STzBdQcEFkxEs=",
+									"description": "will@spatialgarage.com",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlsict/5m08l5S8BIJcbqBJHwPGKsN2aVEo95e4ftRx8Suyj9baIsQctZ8fpi+GpAzh3MyWMxB7ajMSVyKIlNELw0=",
+									"description": "andres"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE_Profile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"UserID\": -1, /*Always send -1*/\r\n    \"Firstname\":\"Javier\", /*required*/\r\n    \"Lastname\":\"Bardi\",/*required*/\r\n    \"Nickname\": \"Javier Bardi\", /*optional,. if don't know send empty*/\r\n    \"CountryISO\": \"\",/*optional. if don't know send empty*/\r\n    \"Country\": \"\",/*the system does not analyze it. but i need a value to be sent. */\r\n    \"ZIPCode\":\"\",/*optional. if don't know send empty*/\r\n    \"Measurement\": \"\",/*the system does not analyze it. but i need a value to be sent.*/\r\n    \"SystemID\": -1,/*optional, if don´t know send always -1*/\r\n    \"Email\": \"j_bardi1@hotmail.com\", /*needed*/\r\n    \"Password\": \"\",/*optional, if don't know send empty and the system send one via email*/\r\n    \"PlusHour\": 0,/*optional, if don´t know send 0*/\r\n    //\"DateUp\": \"\",\r\n    \"DayNumber_Current\": 0,/*the system does not analyze it. but i need a value to be sent.*/\r\n    \"MembershipID\": -1,/*Always send -1*/\r\n    \"Membership\": \"\",/*the system does not analyze it. but i need a value to be sent.*/\r\n    \"MonthPrice\": 0.0000,/*Always send 0.0*/\r\n    \"UserStatusID\": 0,/*Always send 0*/\r\n    \"UserStatus\": \"\",/*the system does not analyze it. but i need a value to be sent.*/\r\n    \"CurrentHeight\": 0.00,/*optional. If you have the user's Height when creating the profile, you send it, but it always sends 0. In order to send the weight, you must also send the SystemID (metric or imperial)*/\r\n    \"GoalWeight\": 0.000,/*optional.If you have the user's goal weight when creating the profile, you send it, but it always sends 0. In order to send the weight, you must also send the SystemID (metric or imperial)*/\r\n    \"CurrentBMI\": 0.00,/*Always send 0.0*/\r\n    \"HourTalkToAbby\":-1/*optional, if don´t know send always -1 Military Form: 6pm => 1800*/\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/UsersV2/CREATE_Profile",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"UsersV2",
+								"CREATE_Profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SET_Weight",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CurrentWeight_Integer\": 97,\r\n    \"CurrentWeight_Decimal\" : 300\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/UsersV2/SET_Weight?Token=JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"UsersV2",
+								"SET_Weight"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlsjvDU4GBryNGh2m+PNbS3A51IlQK4/3nX7WuqNTPljvpFWA02HGPkLhZsf8TdJX37EaOkzmRGihJUUchSSjrTmk=",
+									"description": "The user without a measurement system ",
+									"disabled": true
+								},
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SET_AcceptTerms",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/UsersV2/SET_AcceptTerms?Token=JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"UsersV2",
+								"SET_AcceptTerms"
+							],
+							"query": [
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET_LastQuarterWeight",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CurrentWeight_Integer\": 102,\r\n    \"CurrentWeight_Decimal\" : 300\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/UsersV2/GET_LastQuarterWeight?token=6mmQE9RicYh4ejf94+yIZe5l+E+uHwZdRE+A68UWfCKobHo0qR951JB4bVjafCfdJEVG5ca/fkxF21muO2s9HzWALi47kqDMxq1oQDO+dmM=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"UsersV2",
+								"GET_LastQuarterWeight"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "6mmQE9RicYh4ejf94+yIZe5l+E+uHwZdRE+A68UWfCKobHo0qR951JB4bVjafCfdJEVG5ca/fkxF21muO2s9HzWALi47kqDMxq1oQDO+dmM=",
+									"description": "will@grenntech"
+								},
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlsvyQ3HP5y/kY2Q7/1YmJerJBityD2ZbKFuZTG2O/RXaivnF2ilKbT32j6OHjGn1odLk7aIR581zlphg9IsOxHOs=",
+									"description": "bitco.ar@gmail.com",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ResetPassword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"jbardi@bitco.com.ar\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/UsersV2/ResetPassword",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"UsersV2",
+								"ResetPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MyBehaviour",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/usersV2/Get_MyBehaviour?Token=JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"usersV2",
+								"Get_MyBehaviour"
+							],
+							"query": [
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ContactUS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"message\": \"this is a test message\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/UsersV2/ContactUS?token=JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"UsersV2",
+								"ContactUS"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NeedToDoDailyBehavior",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/usersV2/NeedToDoDailyBehavior?token=6mmQE9RicYh4ejf94+yIZfh74a9H1EtyQzYfRnk32O0j8pSXjWA3vIKQIU1sv23fA/rcOQA9vvQ2OAPuesAOq8HqMTswlzUBwkZFOgsA+J4=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"usersV2",
+								"NeedToDoDailyBehavior"
+							],
+							"query": [
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlsoek9bF6X9StnTiaPF7A3rM0IRrIuV7VpdQN9QpvfIyZTF0Z5LQt2HiDaAw3FdM69p0Mw+aWiKV8cPuLCZU7RsI=",
+									"description": "andres",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlsnsqxhV3aXeqq0fEjG9/Dgb0hvCXwWZJ9uKKptoTCZLepZp6oLUcOCp9P9HjwWpReRx7ocyXkZn7/gkTOpus3eo=",
+									"description": "102802@spatialgarage.com",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "6mmQE9RicYh4ejf94+yIZfh74a9H1EtyQzYfRnk32O0j8pSXjWA3vIKQIU1sv23fA/rcOQA9vvQ2OAPuesAOq8HqMTswlzUBwkZFOgsA+J4=",
+									"description": "Mario"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ContactUS_SETScore",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/usersV2/ContactUS_SETScore?score=4&answersID=1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"usersV2",
+								"ContactUS_SETScore"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar",
+									"disabled": true
+								},
+								{
+									"key": "score",
+									"value": "4"
+								},
+								{
+									"key": "answersID",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SET_Review",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Rating\":1,\r\n    \"Review\":\"I hate this app\",\r\n    \"AcceptShare\":true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/UsersV2/SET_Review?token=6mmQE9RicYh4ejf94+yIZcDNOu68am8QETAR7snssj4EW1d2gt81vRz+IiSpuJZRdfs1dRa9e5DPiqU9uwmw5zTWbSGIYTD8Kj3AEzcZPBA=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"UsersV2",
+								"SET_Review"
+							],
+							"query": [
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "6mmQE9RicYh4ejf94+yIZcDNOu68am8QETAR7snssj4EW1d2gt81vRz+IiSpuJZRdfs1dRa9e5DPiqU9uwmw5zTWbSGIYTD8Kj3AEzcZPBA=",
+									"description": "prueba01"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Stripe",
+			"item": [
+				{
+					"name": "SET_Subscription",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/StripeV2/SET_Subscription?tokenCreditCard=33A8B48D-601B-4BE3-9B33-68D236A00768&membershipID=1&email=jbardi3@bitco.com.ar&ZIPCode=33180&CountryISO=US&firstname=Javierx&lastname=Bardix&Cellphone_CountryCode=+54&Cellphone_Number=91158764975&PromoCode&Password=xxx&AcceptTerms=true",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"StripeV2",
+								"SET_Subscription"
+							],
+							"query": [
+								{
+									"key": "tokenCreditCard",
+									"value": "33A8B48D-601B-4BE3-9B33-68D236A00768",
+									"description": "example"
+								},
+								{
+									"key": "membershipID",
+									"value": "1",
+									"description": "Essentials"
+								},
+								{
+									"key": "email",
+									"value": "jbardi3@bitco.com.ar"
+								},
+								{
+									"key": "ZIPCode",
+									"value": "33180"
+								},
+								{
+									"key": "CountryISO",
+									"value": "US"
+								},
+								{
+									"key": "firstname",
+									"value": "Javierx"
+								},
+								{
+									"key": "lastname",
+									"value": "Bardix"
+								},
+								{
+									"key": "Cellphone_CountryCode",
+									"value": "+54"
+								},
+								{
+									"key": "Cellphone_Number",
+									"value": "91158764975"
+								},
+								{
+									"key": "PromoCode",
+									"value": null
+								},
+								{
+									"key": "Password",
+									"value": "xxx"
+								},
+								{
+									"key": "AcceptTerms",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PromoCode_Checker",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/StripeV2/PromoCode_Checker?promocode=fayr10",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"StripeV2",
+								"PromoCode_Checker"
+							],
+							"query": [
+								{
+									"key": "promocode",
+									"value": "AAAAAA",
+									"description": "invalid",
+									"disabled": true
+								},
+								{
+									"key": "promocode",
+									"value": "fayr10",
+									"description": "Correct"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET_Subscription",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/StripeV2/GET_Subscriptions?token=JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"StripeV2",
+								"GET_Subscriptions"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CANCEL_Subscription",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"TokenSubscription\": \"2dae8e39-fbaf-4789-9729-070015590e8b\",\r\n    \"UserID\": 1,\r\n    \"StripeClientID\": \"73f877be-3f84-4045-aca2-3d12abef2529\",\r\n    \"TokenCreditCard\": \"tok_1JpAklCNy6Ek7i8aUytkqHVL\",\r\n    \"StripeProductID\": \"1\",\r\n    \"Active\": true,\r\n    \"DateSince\": \"2021-10-27T08:57:11.967\",\r\n    \"DateTo\": null,\r\n    \"DiscountCode\": null,\r\n    \"BuddiesCode\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/StripeV2/CANCEL_Subscription?token=JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=&deleteaccount=false&refound=false",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"StripeV2",
+								"CANCEL_Subscription"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar"
+								},
+								{
+									"key": "deleteaccount",
+									"value": "false",
+									"description": "opcional, por defecto false"
+								},
+								{
+									"key": "refound",
+									"value": "false",
+									"description": "opcional, por defecto false"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ApplePayV2",
+			"item": [
+				{
+					"name": "SET_Subscription",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/ApplePayV2/SET_Subscription?TransactionID=1000000970741308&ProductID=app.actibhealth.essentials&firstname=Andrés&lastname=Miranda&Email=andres.miranda@xeon.ec&Cellphone_CountryCode=+59&Cellphone_Number=3998123076&CountryISO=EC&Password&AcceptTerms",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"ApplePayV2",
+								"SET_Subscription"
+							],
+							"query": [
+								{
+									"key": "TransactionID",
+									"value": "1000000970741308"
+								},
+								{
+									"key": "ProductID",
+									"value": "app.actibhealth.essentials"
+								},
+								{
+									"key": "firstname",
+									"value": "Andrés"
+								},
+								{
+									"key": "lastname",
+									"value": "Miranda"
+								},
+								{
+									"key": "Email",
+									"value": "andres.miranda@xeon.ec"
+								},
+								{
+									"key": "Cellphone_CountryCode",
+									"value": "+59"
+								},
+								{
+									"key": "Cellphone_Number",
+									"value": "3998123076"
+								},
+								{
+									"key": "CountryISO",
+									"value": "EC"
+								},
+								{
+									"key": "Password",
+									"value": null
+								},
+								{
+									"key": "AcceptTerms",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DailyReport",
+			"item": [
+				{
+					"name": "GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/DailyProgressV2/GET?Token=JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"DailyProgressV2",
+								"GET"
+							],
+							"query": [
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET_Historial",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/DailyProgressV2/GET_Historial?Token=JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"DailyProgressV2",
+								"GET_Historial"
+							],
+							"query": [
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SET",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"QuestionID\":\"2\",\r\n    \"UserAnswer\":true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/DailyProgressV2/SET?Token=JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"DailyProgressV2",
+								"SET"
+							],
+							"query": [
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SET_List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n    \"QuestionID\":\"2\",\r\n    \"UserAnswer\":true\r\n    },\r\n    {\r\n    \"QuestionID\":\"3\",\r\n    \"UserAnswer\":true\r\n    }\r\n\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/DailyProgressV2/SET_List?Token=JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"DailyProgressV2",
+								"SET_List"
+							],
+							"query": [
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FCM",
+			"item": [
+				{
+					"name": "ADD_Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "/*{\r\n    \"TokenFCM\":\"33A8B48D-601B-4BE3-9B33-68D236A00769\",\r\n    \"Metadata\":\"IOS Version X10\"\r\n    //\"Metadata\":\"Android Version X10\"\r\n}\r\n*/\r\n{\r\n    \"TokenFCM\":\"fnQzLiIGQ7KHuJpmQqkseu:APA91bHDWRqfCOt1pC7U0pL5K7pu7Pnaqnz5j-7hCgtTCthbtW68LNLtqmPEjYgvAoviTnsXTSU1wgh_YRbXrR3Ir4Lp_PsTHPQD7Ohs2dwYPnjAuEYknWWYvR1voY7RlkLNnudeQCBp\",\r\n    \"Metadata\":\"Android\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/FCMV2/ADD_token?Token=JQPCis5wC7KXO2yXsjwlslIMTtzHrXL2gIdeo0HYHOUlrpmI0IfgsqK3nA609JPRPzMGW22vMGxHORbsX1auV+OUOeyagy7xlGIv8L5hAL0=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"FCMV2",
+								"ADD_token"
+							],
+							"query": [
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar",
+									"disabled": true
+								},
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlslIMTtzHrXL2gIdeo0HYHOUlrpmI0IfgsqK3nA609JPRPzMGW22vMGxHORbsX1auV+OUOeyagy7xlGIv8L5hAL0=",
+									"description": "will@flashchargebatteries.com"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Metadatas",
+			"item": [
+				{
+					"name": "SET",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"MetadataName\":\"Time to get up\",\r\n    \"MetadataValue\":\"0600\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/UserMetadataV2/SET?Token=JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"UserMetadataV2",
+								"SET"
+							],
+							"query": [
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SET_List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"MetadataName\": \"Time to get up\",\r\n        \"MetadataValue\": \"0600\"\r\n    },\r\n    {\r\n        \"MetadataName\": \"DrinkWater\",\r\n        \"MetadataValue\": \"yes\"\r\n    },\r\n    {\r\n        \"MetadataName\": \"DrinkAnyThingElse\",\r\n        \"MetadataValue\": \"Wisky\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/UserMetadataV2/SET_List?Token=JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"UserMetadataV2",
+								"SET_List"
+							],
+							"query": [
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_Historial",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/UserMetadataV2/GET_Historial?Token=JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"UserMetadataV2",
+								"GET_Historial"
+							],
+							"query": [
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reminders",
+			"item": [
+				{
+					"name": "PushNotification_LastSended",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/RemindersV2/PushNotification_LastSended?Token=JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"RemindersV2",
+								"PushNotification_LastSended"
+							],
+							"query": [
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reminders_LastSended",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/RemindersV2/Reminders_LastSended?Qty=30&token=6mmQE9RicYh4ejf94+yIZe5l+E+uHwZdRE+A68UWfCKobHo0qR951JB4bVjafCfdJEVG5ca/fkxF21muO2s9HzWALi47kqDMxq1oQDO+dmM=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"RemindersV2",
+								"Reminders_LastSended"
+							],
+							"query": [
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar",
+									"disabled": true
+								},
+								{
+									"key": "Qty",
+									"value": "30",
+									"description": "Cantidad a recibir"
+								},
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlsict/5m08l5S8BIJcbqBJHwPGKsN2aVEo95e4ftRx8Suyj9baIsQctZ8fpi+GpAzh3MyWMxB7ajMSVyKIlNELw0=",
+									"description": "andres_0o@hotmail.com",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "6mmQE9RicYh4ejf94+yIZe5l+E+uHwZdRE+A68UWfCKobHo0qR951JB4bVjafCfdJEVG5ca/fkxF21muO2s9HzWALi47kqDMxq1oQDO+dmM=",
+									"description": "will@greentech"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ADD_Reminder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    //\"ScheduleID\" : \"\", /*in the future To eliminate o edit*/\r\n    //\"UserID\" : \"\", /*I get from the token*/\r\n    //\"DayOfWeek\" : \"\", /*I get from the date*/\r\n    \"DateToSend\" : \"2021/08/31 21:30\",\r\n    \"TitleToSend\" : \"Talk with Abby\",\r\n    \"TextToSend\" : \"about course of Exercise\",\r\n    //\"DateSended\" : \"\", /*in the future to see when de reminder is was sended*/\r\n    //\"ReminderID\" : \"\", /*in the future to see the kind of the reminder*/\r\n    //\"AdditionalTextID\" : \"\", /* optional the kind of aditional text added to the reminder*/\r\n    \"ReminderMethodID\" : \"1\" /*How to send this reminders*/\r\n    //\"SendedLog\" : \"\" /*in the future to see is the delivery is sended*/\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/RemindersV2/ADD_Reminder?Token=JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"RemindersV2",
+								"ADD_Reminder"
+							],
+							"query": [
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SEND_PushNotification",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"DateToSend\" : \"2021/09/30 08:55\",\r\n    \"TitleToSend\" : \"ActibHealth Test\",\r\n    \"TextToSend\" : \"Jaxon ,\r\n It's our time again, how exciting!\r\n I'm ready and waiting for you. :)\r\n Click here to start: https://actib.me/lBo\r\n Cheers,\r\n Abby \",\r\n    \"ReminderMethodID\" : \"1\" /*How to send this reminders*/\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/RemindersV2/SEND_PushNotification?Token=JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=&DebugMode=true",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"RemindersV2",
+								"SEND_PushNotification"
+							],
+							"query": [
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar"
+								},
+								{
+									"key": "token",
+									"value": "6mmQE9RicYh4ejf94+yIZX7eA8nUSbvRQxeJWHQcrX0hVCDfHjiYwWFScaURC5ifzP+ZKqwDxUkpgPdpC3sOF90/Ruo9y+ouTbsYewnD1Kc=",
+									"description": "will",
+									"disabled": true
+								},
+								{
+									"key": "DebugMode",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reminders_TodayUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/RemindersV2/Reminders_TodayUsers?token=6mmQE9RicYh4ejf94+yIZe5l+E+uHwZdRE+A68UWfCKobHo0qR951JB4bVjafCfdJEVG5ca/fkxF21muO2s9HzWALi47kqDMxq1oQDO+dmM=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"RemindersV2",
+								"Reminders_TodayUsers"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar",
+									"disabled": true
+								},
+								{
+									"key": "Token",
+									"value": "6mmQE9RicYh4ejf94+yIZeTHAdHbSB+jS5LpY41B2TC6e4dgx50c3dxEfmSawBx3YcybtKBxe+Q2I7LKJ03z4AmVxHqUaGFcbuVDzyqYjl0=",
+									"description": "Miriam",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "6mmQE9RicYh4ejf94+yIZe5l+E+uHwZdRE+A68UWfCKobHo0qR951JB4bVjafCfdJEVG5ca/fkxF21muO2s9HzWALi47kqDMxq1oQDO+dmM=",
+									"description": "will@greentech"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reminders_Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/RemindersV2/Reminders_Users?token=6mmQE9RicYh4ejf94+yIZe5l+E+uHwZdRE+A68UWfCKobHo0qR951JB4bVjafCfdJEVG5ca/fkxF21muO2s9HzWALi47kqDMxq1oQDO+dmM=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"RemindersV2",
+								"Reminders_Users"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar",
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "6mmQE9RicYh4ejf94+yIZe5l+E+uHwZdRE+A68UWfCKobHo0qR951JB4bVjafCfdJEVG5ca/fkxF21muO2s9HzWALi47kqDMxq1oQDO+dmM=",
+									"description": "wll@greentech"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reminders_SaveUserChoice",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"ReminderID\": 13,\r\n        \"Active\": false\r\n    },\r\n    {\r\n        \"ReminderID\": 5,\r\n        \"Active\": false\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/RemindersV2/Reminders_SaveUserChoice?token=JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"RemindersV2",
+								"Reminders_SaveUserChoice"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Courses",
+			"item": [
+				{
+					"name": "GET_List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/CoursesV2/Get_List?Token=JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"CoursesV2",
+								"Get_List"
+							],
+							"query": [
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar"
+								},
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlslIMTtzHrXL2gIdeo0HYHOUlrpmI0IfgsqK3nA609JPRPzMGW22vMGxHORbsX1auV+OUOeyagy7xlGIv8L5hAL0=",
+									"description": "will@flashchargebatteries.com",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SET_Taken",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CourseID\":6\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/CoursesV2/SET_Taken?Token=JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"CoursesV2",
+								"SET_Taken"
+							],
+							"query": [
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AppSections",
+			"item": [
+				{
+					"name": "GET_List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/AppSectionsV2/GET_List?Token=JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"AppSectionsV2",
+								"GET_List"
+							],
+							"query": [
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar"
+								},
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlskqwaCRS/XkIc7CBxqSsmLy4Unm9MohPuxI3f7b8b94cttwFPAkPOzyt4uJBxeQq+0uTnvkXWftDXD9zjKCc6rs=",
+									"description": "wiil@Specialgarage.com",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FirebaseCloud",
+			"item": [
+				{
+					"name": "SendMessage",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "Key=AAAABHjQGEU:APA91bG6AQ8ZZ5bEKBMGVW_Ac2sGdj6kC_LUvDShlPJXXp1B4MgFNw9I6bRUXeADi3SbFMYMcMOz111Juj5nQCmvQ7oA3AFox_p6WYE8qzor_tyPARzGn3wFpbNhapl6ln8neqPxDq0J",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"to\": \"ecIdliksRHKXI-6rvVrVvf:APA91bHXbp4nagAhiKHuaYy_IWwwH7djxYxn9lw1rd0D9lTXmz2Rzqz_tTyiJgIBWfsUz49Hjx2eCbk74X0CVJo9RhIkq0bQFIQoWj2G2Wa6oAbk8xS1tk22QIpVw_e0PKM9q95Y-tCi\",\r\n    \"content_available\": true,\r\n    \"priority\": \"high\",\r\n    \"notification\": {\r\n        \"title\": \"Hora de Dormir!!\",\r\n        \"body\": \"Si te llegó te corto el zoom\",\r\n        \"android_channel_id\": \"ActibHealth\",\r\n        \"sound\": \"default\"\r\n    },\r\n    \"data\": {\r\n        \"title\": \"Hora de Dormir\",\r\n        \"body\": \"Si te llegó te corto el zoom\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fcm.googleapis.com/fcm/send",
+							"protocol": "https",
+							"host": [
+								"fcm",
+								"googleapis",
+								"com"
+							],
+							"path": [
+								"fcm",
+								"send"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ValidateToken",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "Key=AAAABHjQGEU:APA91bG6AQ8ZZ5bEKBMGVW_Ac2sGdj6kC_LUvDShlPJXXp1B4MgFNw9I6bRUXeADi3SbFMYMcMOz111Juj5nQCmvQ7oA3AFox_p6WYE8qzor_tyPARzGn3wFpbNhapl6ln8neqPxDq0J",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"registration_ids\":[\"d1FCh88VSgS4eQT5Iwxp10:APA91bGD4wQ_uWdiwViOxJ4mqEPSXh5OZ2DZPnZ236wRCyw6DRM15pGhygG6eshJ-nQQwfI04Z_dRQKfPAnTqhxj9l2l1xtLuVMtIajaaguC12UYc3D1RWNYukC2yYOyY9qyuOvRLAqA\"], \r\n    \"dry_run\": true\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fcm.googleapis.com/fcm/send",
+							"protocol": "https",
+							"host": [
+								"fcm",
+								"googleapis",
+								"com"
+							],
+							"path": [
+								"fcm",
+								"send"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Recipes",
+			"item": [
+				{
+					"name": "GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/RecipesV2/GET?Breakfast=true&Lunch=true&Dinner=true",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"RecipesV2",
+								"GET"
+							],
+							"query": [
+								{
+									"key": "Breakfast",
+									"value": "true"
+								},
+								{
+									"key": "Lunch",
+									"value": "true"
+								},
+								{
+									"key": "Dinner",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET_UserSelection",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/RecipesV2/GET_UserSelection?isCurrent=true&token=JQPCis5wC7KXO2yXsjwlsoek9bF6X9StnTiaPF7A3rM0IRrIuV7VpdQN9QpvfIyZTF0Z5LQt2HiDaAw3FdM69p0Mw+aWiKV8cPuLCZU7RsI=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"RecipesV2",
+								"GET_UserSelection"
+							],
+							"query": [
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar",
+									"disabled": true
+								},
+								{
+									"key": "isCurrent",
+									"value": "true"
+								},
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlsoek9bF6X9StnTiaPF7A3rM0IRrIuV7VpdQN9QpvfIyZTF0Z5LQt2HiDaAw3FdM69p0Mw+aWiKV8cPuLCZU7RsI=",
+									"description": "andres"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SAVE_UserSelection",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n   \"RecipeID\":\"2ED28423-4896-461E-B664-15810FCBADBB\",\r\n   \"QtyBreakFast\":4\r\n\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/RecipesV2/SAVE_UserSelection?isCurrent=true&token=JQPCis5wC7KXO2yXsjwlsoek9bF6X9StnTiaPF7A3rM0IRrIuV7VpdQN9QpvfIyZTF0Z5LQt2HiDaAw3FdM69p0Mw+aWiKV8cPuLCZU7RsI=\n",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"RecipesV2",
+								"SAVE_UserSelection"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlssAJFTHikCMZrTVBjpPThbQqecgnvAsQR8J9eyB8zBvi1YBm+yaBqB4eTx4vNPlHCI2cAsITx85rG+ifIJQ3064=",
+									"description": "jbardi@bitco.com.ar",
+									"disabled": true
+								},
+								{
+									"key": "isCurrent",
+									"value": "true"
+								},
+								{
+									"key": "token",
+									"value": "JQPCis5wC7KXO2yXsjwlsoek9bF6X9StnTiaPF7A3rM0IRrIuV7VpdQN9QpvfIyZTF0Z5LQt2HiDaAw3FdM69p0Mw+aWiKV8cPuLCZU7RsI=\n",
+									"description": "andres"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_UserGroceryList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/recipesV2/Get_UserGroceryList?Token=JQPCis5wC7KXO2yXsjwlsoek9bF6X9StnTiaPF7A3rM0IRrIuV7VpdQN9QpvfIyZTF0Z5LQt2HiDaAw3FdM69p0Mw+aWiKV8cPuLCZU7RsI=&isCurrent=true",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"recipesV2",
+								"Get_UserGroceryList"
+							],
+							"query": [
+								{
+									"key": "Token",
+									"value": "JQPCis5wC7KXO2yXsjwlsoek9bF6X9StnTiaPF7A3rM0IRrIuV7VpdQN9QpvfIyZTF0Z5LQt2HiDaAw3FdM69p0Mw+aWiKV8cPuLCZU7RsI=",
+									"description": "andres"
+								},
+								{
+									"key": "isCurrent",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

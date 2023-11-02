@@ -218,7 +218,6 @@ export default class Onboarding extends Component {
                   <Text
                     onPress={() => navigation.navigate("ForgotPassword")}
                     style={{ color: "#159BC9", marginTop: -10 }}
-                    tabIndex={3}
                   >
                     Forgot Password?
                   </Text>
