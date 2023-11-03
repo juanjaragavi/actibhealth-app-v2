@@ -6,10 +6,31 @@ import { NavigationContainer } from "@react-navigation/native";
 import * as SplashScreen from "expo-splash-screen";
 import { Images, products, materialTheme } from "./constants/";
 import Screens from "./navigation/Screens";
+import axios from 'axios';
+import api from  './api/api';
 
 // Before rendering any navigation stack
 import { enableScreens } from "react-native-screens";
 enableScreens();
+
+const getAPIVersion = async () => {
+  try {
+      const response = await api.get('/dataV2/API_Version');
+      console.log(response.data);
+      return response.data;
+  } catch (error) {
+      console.error("Error fetching API version:", error);
+  }
+}
+const getCountries = async () => {
+  try {
+      const response = await api.get('/dataV2/Countries');
+      console.log(response.data);
+      return response.data;
+  } catch (error) {
+      console.error("Error fetching countries:", error);
+  }
+}
 
 // cache app images
 const assetImages = [

@@ -178,7 +178,6 @@ export default class Onboarding extends Component {
                     }}
                     placeholder="Password"
                     secureTextEntry={true}
-                    tabIndex={1}
                     onSubmitEditing={() => {
                       loginButton.focus();
                     }}
