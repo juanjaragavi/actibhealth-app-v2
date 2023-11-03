@@ -198,7 +198,6 @@ export default class Onboarding extends Component {
                       marginBottom: 20,
                     }}
                     onPress={() => navigation.navigate("App")}
-                    tabIndex={2}
                   >
                     <Text
                       style={{
