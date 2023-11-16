@@ -14,7 +14,7 @@ export default class Nutrients extends React.Component {
         contentContainerStyle={styles.homeContainer}>
         <Block flex>
         <WebView
-          source={{ uri: 'https://app.actibhealth.com/main/nutrients/' }}
+          source={{ uri: 'https://app.actibhealth.com/main/nutrients?state=open' }}
           style={{ flex: 1 }}
         />
       </Block>
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   },
   homeContainer: {
     minHeight: '100%',
-    backgroundColor: 'green',
+    backgroundColor: 'white',
     minWidth: '100%',
   },
 });
