@@ -14,7 +14,7 @@ export default class Thoughts extends React.Component {
         contentContainerStyle={styles.homeContainer}>
         <Block flex>
         <WebView
-          source={{ uri: 'https://app.actibhealth.com/main/thoughts-training' }}
+          source={{ uri: 'https://app.actibhealth.com/main/thoughts-training?state=open' }}
           style={{ flex: 1 }}
         />
       </Block>
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   },
   homeContainer: {
     minHeight: '100%',
-    backgroundColor: 'green',
+    backgroundColor: 'white',
     minWidth: '100%',
   },
 });

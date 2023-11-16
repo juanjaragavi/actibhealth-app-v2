@@ -1,7 +1,7 @@
 import React from "react";
 import { Block } from "galio-framework";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { TouchableOpacity, ScrollView, StyleSheet, Image } from "react-native";
+import { ScrollView, StyleSheet, Image } from "react-native";
 
 import { Images } from "../constants/";
 import { Drawer as DrawerCustomItem } from "../components/";
@@ -40,9 +40,7 @@ function CustomDrawerContent({
       forceInset={{ top: "always", horizontal: "never" }}
     >
       <Block style={styles.header}>
-        <TouchableOpacity onPress={() => navigation.navigate("Home")}>
           <Image source={{ uri: Images.LogoAB2 }} style={styles.logo} />
-        </TouchableOpacity>
       </Block>
       <Block flex style={styles.drawerContainer}>
         <ScrollView

@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import {
   ScrollView,
   ImageBackground,
@@ -196,7 +196,7 @@ export default class Onboarding extends Component {
                       paddingHorizontal: 50,
                       marginBottom: 20,
                     }}
-                    onPress={() => navigation.navigate("App")}
+                    onPress={() => navigation.navigate("Home")}                    
                   >
                     <Text
                       style={{

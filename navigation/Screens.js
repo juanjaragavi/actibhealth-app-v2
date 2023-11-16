@@ -739,7 +739,7 @@ export default function OnboardingStack(props) {
           headerTransparent: true,
         }}
       />
-      <Stack.Screen name="App" component={AppStack} />
+      <Stack.Screen name="Home" component={AppStack} />
       <Stack.Screen name="ForgotPassword" component={ForgotPasswordStack} />
     </Stack.Navigator>
   );

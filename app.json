@@ -23,7 +23,16 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.actibhealth.v2"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "39e6f01f-8168-4643-b534-7022404c0760"
+      }
+    },
+    "android": {
+      "package": "com.actibhealth.v2"
     }
   }
 }

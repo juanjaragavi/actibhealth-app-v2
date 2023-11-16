@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   },
   homeContainer: {
     minHeight: '100%',
-    backgroundColor: 'green',
+    backgroundColor: 'white',
     minWidth: '100%',
   },
 });

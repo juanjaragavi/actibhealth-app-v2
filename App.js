@@ -4,33 +4,12 @@ import { Asset } from "expo-asset";
 import { Block, GalioProvider } from "galio-framework";
 import { NavigationContainer } from "@react-navigation/native";
 import * as SplashScreen from "expo-splash-screen";
-import { Images, products, materialTheme } from "./constants/";
+import { Images, materialTheme } from "./constants/";
 import Screens from "./navigation/Screens";
-import axios from 'axios';
-import api from  './api/api';
 
 // Before rendering any navigation stack
 import { enableScreens } from "react-native-screens";
 enableScreens();
-
-const getAPIVersion = async () => {
-  try {
-      const response = await api.get('/dataV2/API_Version');
-      console.log(response.data);
-      return response.data;
-  } catch (error) {
-      console.error("Error fetching API version:", error);
-  }
-}
-const getCountries = async () => {
-  try {
-      const response = await api.get('/dataV2/Countries');
-      console.log(response.data);
-      return response.data;
-  } catch (error) {
-      console.error("Error fetching countries:", error);
-  }
-}
 
 // cache app images
 const assetImages = [
@@ -39,9 +18,6 @@ const assetImages = [
   Images.Avatar,
   Images.Onboarding1,
 ];
-
-// cache product images
-products.map((product) => assetImages.push(product.image));
 
 function cacheImages(images) {
   return images.map((image) => {

@@ -14,7 +14,7 @@ export default class KnowledgeCenter extends React.Component {
         contentContainerStyle={styles.homeContainer}>
         <Block flex>
         <WebView
-          source={{ uri: 'https://app.actibhealth.com/main/knowledge-center/' }}
+          source={{ uri: 'https://app.actibhealth.com/main/knowledge-center?state=open' }}
           style={{ flex: 1 }}
         />
       </Block>
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   },
   homeContainer: {
     minHeight: '100%',
-    backgroundColor: 'green',
+    backgroundColor: 'white',
     minWidth: '100%',
   },
 });
